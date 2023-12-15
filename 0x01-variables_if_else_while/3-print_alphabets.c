@@ -1,27 +1,26 @@
-#include <stdio>
+#include <stdio.h>
 /**
  * main - Entry point
  * Return: Always 0 (Success)
- */
-
+*/
 int main(void)
 {
-	char c;
+char lowercase = 'a';
+char uppercase = 'A';
 
-	char d;
+while (lowercase <= 'z')
+{
+putchar(lowercase);
+lowercase++;
+}
 
-	c = 'a';
-	d = 'A';
-	while
-		(c <= 'z') {
-			putcher(c);
-			c++;
-		}
-	while
-		(d <= 'z') {
-			putcher(d);
-			d++;
-		}
-	putcher('\n);
-	return (0);
+while (uppercase <= 'Z')
+{
+putchar(uppercase);
+uppercase++;
+}
+
+putchar('\n');
+
+return (0);
 }
