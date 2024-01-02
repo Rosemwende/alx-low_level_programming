@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib>
+#include <stdlib.h>
 #include <time.h>
 
 /**
@@ -10,7 +10,7 @@
 
 int main(void)
 {
-char password(84);
+char password[84];
 int index = 0, sum = 0, diff_half1, diff_half2;
 
 srand(time(0));
@@ -36,7 +36,7 @@ for (index = 0; password[index]; index++)
 
 {
 if (password[index] >= (33 + diff_half1))
-
+{
 password[index] -= diff_half1;
 
 break;
@@ -48,16 +48,16 @@ for (index = 0; password[index]; index++)
 
 {
 if (password[index] >= (33 + diff_half2))
-
+{
 password[index] -= diff_half2;
 
 break;
+}
+}
+}
+printf("%s", password);
 
-}
-}
-}
-prrintf("%s", password);
-return (0);
+	return (0);
 }
 
 
