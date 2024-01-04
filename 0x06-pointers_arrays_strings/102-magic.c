@@ -1,11 +1,5 @@
 #include <stdio.h>
 
-/**
-* main - Entry point of the program.
-* This function initializes variables, performs a specific task,
-* and prints the result.
-* Return: 0 on success
-*/
 int main(void)
 {
 int n;
