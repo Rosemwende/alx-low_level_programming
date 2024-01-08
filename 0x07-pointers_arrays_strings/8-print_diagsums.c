@@ -9,13 +9,11 @@
  */
 void print_diagsums(int *a, int size)
 {
-int i, diag1_sum = 0, diag2_sum = 0;
+int i, n, sum1 = 0, sum2 = 0;
+for (i = 0; i <= (size * size); i = i + size + 1)
+	sum1 = sum1 + a[i];
 
-for (i = 0; i < size; i++)
-{
-diag1_sum += *(a + i * size + i);
-diag2_sum += *(a + i * size + (size - 1 - i));
-}
-
-printf("%d, %d\n", diag1_sum, diag2_sum);
+for (n = size - 1; n <= (size * size) - size; n = n + size - 1)
+sum2 = sum2 + a[n];
+printf("%d, %d\n", sum1, sum2);
 }
