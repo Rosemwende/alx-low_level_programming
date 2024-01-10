@@ -14,7 +14,7 @@ return (check_palindrome(s, 0, length - 1));
 }
 
 /**
- * check_palindrome - Helper function to recursively check if a string is a palindrome.
+ * check_palindrome - To recursively check if a string is a palindrome
  * @s: The string to be checked.
  * @start: The starting index of the substring to check.
  * @end: The ending index of the substring to check.
