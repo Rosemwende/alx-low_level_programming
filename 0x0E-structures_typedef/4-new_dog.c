@@ -1,7 +1,10 @@
-#include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 #include "dog.h"
+#include <string.h>
+#include <stdio.h>
+
+int _strlen(char *S);
+char *_strcpy(char *dest, char *src);
 
 /**
  * new_dog - creates a new dog with specified name, age, and owner
