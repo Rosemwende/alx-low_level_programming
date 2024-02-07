@@ -13,20 +13,20 @@ listint_t *new_tmp;
 if (head == NULL || *head == NULL)
 return (NULL);
 tmp = *head;
-*head = tmp->next
+*head = tmp->next;
 tmp->next = NULL;
 
 while (*head != NULL)
 {
-new_temp = (*head)->next;
+new_tmp = (*head)->next;
 (*head)->next = tmp;
 tmp = *head;
 if (new_tmp == NULL)
 return (*head);
-*head = new_temp;
+*head = new_tmp;
 }
 if (*head == NULL)
-(
+{
 *head = tmp;
 return (*head);
 }
