@@ -50,7 +50,7 @@ listint_t *create_new_node(int n)
 {
 listint_t *new_node;
 
-new_node = malloc((sizeof(listint_t));
+new_node = malloc(sizeof(listint_t));
 if (new_node == NULL)
 return (NULL);
 new_node->n = n;
