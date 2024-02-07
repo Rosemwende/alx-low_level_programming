@@ -29,6 +29,11 @@ free(temp);
 size_t print_listint_safe(const listint_t *head)
 {
 size_t nodes = 0;
+listint_t *hptr;
+listint_t *name;
+listint_t *new;
+listint_t *add;
+
 struct (*hptr, *name, *new, *add);
 
 hptr = NULL;
