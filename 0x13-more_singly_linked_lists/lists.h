@@ -33,6 +33,5 @@ size_t print_listint_safe(const listint_t *head);
 size_t free_listint_safe(listint_t **h);
 listint_t *find_listint_loop(listint_t *head);
 listint_t *create_new_node(int n);
-void free_listp(listp_t **head);
 
 #endif /* LISTS_H*/
