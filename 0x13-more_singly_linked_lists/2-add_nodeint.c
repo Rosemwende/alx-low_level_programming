@@ -23,5 +23,5 @@ new_node->next = *head;
 new_node->n = n;
 *head = new_node;
 
-return (0);
+return (*head);
 }
