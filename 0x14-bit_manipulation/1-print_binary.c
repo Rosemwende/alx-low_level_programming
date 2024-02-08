@@ -3,10 +3,12 @@
  /**
   * print_binary - prints out binary equivalent to
   * a decimal number
+  * @n: The number to print in binary
+  *
   * Description: This function takes an unsigned long
   * int and prints its binary representation to
-  * the standard output.
-  * @n: The numbber to be printed in binary
+  * the standard output. It avoids using arrays,
+  * malloc, and the % or / operators.
   */
 void print_binary(unsigned long int n)
 {
