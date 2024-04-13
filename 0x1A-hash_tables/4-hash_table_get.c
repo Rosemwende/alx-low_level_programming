@@ -16,7 +16,7 @@ hash_node_t *bucket;
 if (!ht || !key || *key)
 return (NULL);
 
-index = key_index((const unsigned char*)key, ht->size);
+index = key_index((const unsigned char *)key, ht->size);
 bucket = ht->array[index];
 
 while (bucket)
