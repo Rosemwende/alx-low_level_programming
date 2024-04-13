@@ -20,13 +20,12 @@ valuecopy = strdup(value);
 if (!valuecopy)
 return (0);
 
-index = key_index((cons unsigned char *)key,, ht->size);
+index = key_index((const unsigned char *)key, ht->size);
 bucket = ht->array[index];
-
 
 while (bucket)
 {
-if(!strcmp(key, bucket->key))
+if (!strcmp(key, bucket->key))
 {
 free(bucket->value);
 bucket->value = valuecopy;
